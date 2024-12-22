@@ -4,12 +4,17 @@ document.getElementById('donate-btn').addEventListener('click',function(event){
     const input =getId('inputvalue');
     console.log( input)
 
-    if(!isNaN(input) && input.trim() !== ""){
+    if(input !== String){
         const amountnumber = getElementByInnerTex('amount');
-        console.log(amountnumber)
-        const totamAmount = input + amountnumber;
+        
+        const totalAmount = input + amountnumber;
 
-        document.getElementById('amount').innerText = totamAmount;
+        document.getElementById('amount').innerText = totalAmount;
+
+        const totaltaka =getElementByInnerTex('total');
+        const totalamount = totaltaka -input;
+        
+        document.getElementById('total').innerText = totalamount;
     }
     else{
         alert('not a number')
