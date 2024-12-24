@@ -19,9 +19,3 @@ function showsection(id){
 }
 
 
-// function btnshow(id){
-//     document.getElementById('donationbtn').classList.remove('bg-lime-400')
-//     document.getElementById('historybtn').classList.remove('bg-lime-400')
-
-//     document.getElementById(id).classList.add('bg-lime-400')
-// }
